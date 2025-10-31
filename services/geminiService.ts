@@ -7,7 +7,7 @@ if (!API_KEY) {
   throw new Error("API_KEY environment variable not set");
 }
 
-const ai = new GoogleGenAI({ apiKey: API_KEY });
+const ai = new GoogleGenAI({AIzaSyCoChmdbOttjdimpaCFklfY1bFRo64BdE4 });
 
 export const startChat = (history: Message[]): Chat => {
   // Fix: Updated to use the recommended `ai.chats.create` instead of the deprecated `model.startChat`.
